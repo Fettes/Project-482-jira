@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[![OSCS Status](https://www.oscs1024.com/platform/badge/Fettes/Project-482-jira.svg?size=small)](https://www.oscs1024.com/project/Fettes/Project-482-jira?ref=badge_small)
+
 ## Available Scripts
 
 In the project directory, you can run:

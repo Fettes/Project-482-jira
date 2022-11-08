@@ -1,17 +1,12 @@
 import React from 'react';
 import './App.css';
-import { ProjectList } from 'views/project-list';
-import { TsReactTest } from './test/try-use-array';
-import { Login } from './views/login';
+import { useAuth } from './context/auth-context';
+import { AuthenticatedApp } from './views/authenticated_app';
+import { UnauthenticatedApp } from './views/unanthenticated_app';
 
 function App() {
-  return (
-    <div className='App'>
-      {/*<ProjectList />*/}
-      {/*<TsReactTest />*/}
-      <Login />
-    </div>
-  );
+  const { user } = useAuth();
+  return <div className='App'>{user ? <AuthenticatedApp /> : <UnauthenticatedApp />}</div>;
 }
 
 export default App;
